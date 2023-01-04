@@ -31,38 +31,40 @@ body {
     }
 }
 
-.pacmanFood {
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    background: #fff;
-    border-radius: 50%;
+.pacmanFood{
+    display: flex;
+    flex-direction: row;
+    width: 200%;
+    margin-top: 50vh;
+    margin-left: 400px;
+   justify-content: space-between;
+    overflow: hidden;
 }
 
 .dot-1 {
     width: 15px;
     height: 15px;
-    background: #fff;
+    background: aqua;
     border-radius: 50%;
 
-    margin: 50vh 0 0 300px;
     animation-name: food;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-delay: 1s;
+
+    padding-left: 100%;
 }
 
 .dot-2 {
     width: 15px;
     height: 15px;
-    background: #fff;
+    background: rgb(225, 47, 47);
     border-radius: 50%;
 
-    margin: 50vh 0 0 400px;
+
     animation-name: food;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-delay: 2s;
+   
 }
 
 .dot-3 {
@@ -71,11 +73,11 @@ body {
     background: #fff;
     border-radius: 50%;
 
-    margin: 50vh 0 0 500px;
-    animation-name: food;
-    animation-duration: 2s;
+ 
+    animation-name: food-3;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-delay: 3s;
+  
 }
 
 .dot-4 {
@@ -84,11 +86,11 @@ body {
     background: #fff;
     border-radius: 50%;
 
-    margin: 50vh 0 0 600px;
-    animation-name: food;
-    animation-duration: 2s;
+   
+    animation-name: food-4;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-delay: 4s;
+   
 }
 
 .dot-5 {
@@ -97,11 +99,11 @@ body {
     background: #fff;
     border-radius: 50%;
 
-    margin: 50vh 0 0 700px;
-    animation-name: food;
-    animation-duration: 2s;
+
+    animation-name: food-5;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-delay: 5s;
+    
 }
 
 .dot-6 {
@@ -110,11 +112,11 @@ body {
     background: #fff;
     border-radius: 50%;
 
-    margin: 50vh 0 0 800px;
-    animation-name: food;
-    animation-duration: 2s;
+    
+    animation-name: food-6;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-delay: 6s;
+    
 }
 
 .dot-7 {
@@ -123,61 +125,32 @@ body {
     background: #fff;
     border-radius: 50%;
 
-    margin: 50vh 0 0 900px;
-    animation-name: food;
-    animation-duration: 2s;
+  
+    animation-name: food-7;
+    animation-duration: 1s;
     animation-iteration-count: infinite;
-    animation-delay: 7s;
-}
-
-
-@keyframes food {
-    0% {
-        right: 0
-    }
-
-    90% {
-        opacity: 1
-    }
-
-    95% {
-        opacity: 0
-    }
-
-    100% {
-        right: 77%;
-        opacity: 0
-    }
-}
-
-.dot-1 {
     
 }
 
-.dot:nth-child(2) {
-    animation-delay: 2s;
+.dot-8 {
+    width: 15px;
+    height: 15px;
+    background:#ff05b8;
+    border-radius: 50%;
+
+    animation-name: food-8;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+    animation-delay: 1s;
 }
 
-.dot:nth-child(3) {
-    animation-delay: 3s;
-}
-
-.dot:nth-child(4) {
-    animation-delay: 4s;
-}
-
-.dot:nth-child(5) {
-    animation-delay: 5s;
-}
-
-.dot:nth-child(6) {
-    animation-delay: 6s;
-}
-
-.dot:nth-child(7) {
-    animation-delay: 7s;
-}
-
-.dot:nth-child(8) {
-    animation-delay: 8s;
-}
+@keyframes food {
+    0%{
+      transform: translate(0, 0);
+    }
+    
+    100%{
+      transform: translate(-100%, 0);
+    }
+  }
