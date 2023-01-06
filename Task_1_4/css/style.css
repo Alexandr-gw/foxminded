@@ -1,69 +1,128 @@
 body {
-    background: rgb(122, 122, 122);
+    background: rgb(81, 81, 81);
     display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
 }
 
+@media screen and (min-width: 220px) and (max-width:670px) {
+    .pacman {
+        margin: -500px 0 0 0;
+    }
+
+    @keyframes mouth {
+        0% {
+            clip-path: polygon(50% 0%, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 50% 50%, 50% 100%, 0% 100%, 0% 0%, 0% 0%);
+        }
+
+         50%{
+           clip-path: polygon(50% 0%, 100% 00%, 100% 0%, 100% 100%, 80% 90%, 50% 50%, 20% 90%, 0% 100%, 0% 0%, 0% 0%);
+        }
+
+        100% {
+            clip-path: polygon(50% 0%, 100% 0%, 100% 0%, 100% 100%, 50% 100%, 50% 50%, 50% 100%, 0% 100%, 0% 0%, 0% 0%);
+        }
+    }
+
+    .pacmanFood{
+        display: flex;
+        overflow: hidden;
+        flex-direction: column;
+        height: 60vh;
+        width: 1em;
+    }
+
+    .dots{
+        display: flex;
+        flex-direction: column;
+        height: 200%;
+        animation: food 1.5s linear infinite;
+    }
+
+    .dot {
+        width: 15px;
+        height: 15px;
+        background: #fff;
+        border-radius: 50%;
+        margin-bottom: 5em;
+    }
+
+    @keyframes food {
+        0% {
+            transform: translateY(0);
+        }
+    
+        100% {
+            transform: translateY(-50%);
+        }
+    }
+
+}
+
+@media screen and (min-width: 671px) {
+    .pacman {
+        margin: 0 500px 0 0;
+    }
+
+    @keyframes mouth {
+        0% {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 20%, 50% 50%, 100% 80%, 100% 100%, 0% 100%);
+        }
+
+        50% {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 50% 50%, 100% 50%, 100% 100%, 0% 100%);
+        }
+
+        100% {
+            clip-path: polygon(0% 0%, 100% 0%, 100% 20%, 50% 50%, 100% 80%, 100% 100%, 0% 100%);
+        }
+    }
+
+    .pacmanFood {
+        display: flex;
+        overflow: hidden;
+        flex-direction: row;
+        width: 70vh;
+        height: 1em;
+        margin: 0 0 0 50px;
+    }
+
+    .dots{
+        display: flex;
+        flex-direction: row;
+        width: 200%;
+        animation: food 1.5s linear infinite;
+    }
+
+    .dot {
+        width: 15px;
+        height: 15px;
+        background: #fff;
+        border-radius: 50%;
+        margin-left: 5em;
+    }
+
+    @keyframes food {
+        0% {
+            transform: translateX(0);
+        }
+    
+        100% {
+            transform: translate(-50%);
+        }
+    }
+
+}
+
 .pacman {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin: -45px 0 0 -300px;
     background: #ffd505;
     position: absolute;
     z-index: 1;
     animation-name: mouth;
     animation-duration: .37s;
     animation-iteration-count: infinite;
-}
-
-@keyframes mouth {
-    0% {
-        clip-path: polygon(0% 0%, 100% 0%, 100% 20%, 50% 50%, 100% 80%, 100% 100%, 0% 100%);
-    }
-
-    50% {
-        clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 50% 50%, 100% 50%, 100% 100%, 0% 100%);
-    }
-
-    100% {
-        clip-path: polygon(0% 0%, 100% 0%, 100% 20%, 50% 50%, 100% 80%, 100% 100%, 0% 100%);
-    }
-}
-
-.pacmanFood {
-    display: flex;
-    flex-direction: row;
-    width: 70vh;
-    height: 1em;
-    margin: 0 0 0 -250px;
-    overflow: hidden;
-}
-
-.dots-1,
-.dots-2 {
-    display: flex;
-    flex-direction: row;
-    width: 200%;
-    animation: food 1.5s linear infinite;
-}
-
-.dot {
-    width: 15px;
-    height: 15px;
-    background: #fff;
-    border-radius: 50%;
-    margin-left: 5em;
-}
-
-@keyframes food {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translate(-50%);
-    }
 }
