@@ -1,0 +1,33 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js"></script>
+    <title>Weather API</title>
+</head>
+
+<body>
+    <header>
+        <p>WeatherEd</p>
+    </header>
+    <main>
+        <form role="search" method="get" class="search-form form" action="" autocomplete="off">
+            <div>
+                <input type="search" id="input" class="search-field" placeholder="Enter city name" value="" id="search">
+                <button class="close-icon" type="reset">x</button>
+                <div id="suggestions"></div>
+            </div>
+            <span class="screen-reader-text" id="cityCelected"></span>
+        </form>
+        <div class="container-today" id="objFirstElement">
+            <!-- Data from JS -->
+        </div>
+        <div class="container">
+            <ul id="objList">
+                <!-- Data from JS -->
+            </ul>
+        </div>
+    </main>
+</body>

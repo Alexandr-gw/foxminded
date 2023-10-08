@@ -1,0 +1,25 @@
+:root {
+    /* Font-weight variables */
+    --font-bold: 700;
+    --font-medium: 500;
+    --font-regular: 400;
+    /* Color variables */
+    --color-blue: #4A99D3;
+    --color-black: #0F001A;
+    --color-purple: #260041;
+    --color-blue-light: #8ac3eb;
+    --color-deep-black: #000;
+    --color-deep-white: #fff;
+    /* Media query variables */
+    --mobile-breakpoint: 650px;
+	--tablet-breakpoint: 830px;
+    --regular-breakpoint: 1200px;
+    
+    
+}
+
+/*Font*/
+@font-face {
+        font-family: Objective;
+        src: url(../fonts/Objective/NotoSansNKo-Regular.ttf);
+    }

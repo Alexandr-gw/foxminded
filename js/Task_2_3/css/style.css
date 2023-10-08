@@ -1,0 +1,29 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    background-color: azure;
+    height: 100vh;
+    font-size: 24px;
+}
+
+.sortType {
+    display: flex;
+    padding: 30px;
+    background-color:  rgb(220, 220, 220);
+}
+
+.sortType ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.result{
+    display: flex;
+    padding: 30px;
+}
+
+.result ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

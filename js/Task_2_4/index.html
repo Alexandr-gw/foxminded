@@ -1,0 +1,125 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js"></script>
+    <title>Validation</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <form action="" method="get" class="intro-form">
+            <header>
+                <h1>Create Account</h1>
+            </header>
+            <div class="container">
+                <div>
+                    <div class="content-col-1">
+                        <label for="firstName">First Name*</label>
+                        <input type="text" id="firstName" placeholder="Enter your first name" minlength="2"
+                            maxlength="12" class="text required" />
+                    </div>
+                    <div class="content-col-2">
+                        <label for="lastName">Last Name*</label>
+                        <input type="text" id="lastName" placeholder="Enter your last name" class="text required" />
+                    </div>
+                </div>
+                <label for="email">Email*</label>
+                <input type="email" id="email" placeholder="Enter your email" class="email required" />
+                <span class="error" aria-live="polite"></span>
+                <div>
+                    <div class="content-col-1">
+                        <label for="password">Password*</label>
+                        <input type="password" id="password" placeholder="Enter your password" minlength="8"
+                            maxlength="36" class="password required" />
+                    </div>
+                    <div class="content-col-2">
+                        <label for="password" id="labelPassConfirm">Confirm Password*</label>
+                        <input type="password" id="passwordConfirm" placeholder="Enter your password again"
+                            minlength="8" maxlength="36" class="passwordConf required" />
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <div class="content-col-1">
+                        <fieldset>
+                            <legend>Gender: </legend>
+                            <ul class="genderList">
+                                <li>
+                                    <input type="radio" id="male" name="gender" value="male" />
+                                    <label for="male" class="radioBox">Male</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="female" name="gender" value="female" />
+                                    <label for="female" class="radioBox">Female</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                    <div class="content-col-2">
+                        <fieldset>
+                            <legend>Hobbies</legend>
+                            <ul class="hobbiesList">
+                                <li>
+                                    <input type="checkbox" id="music" name="hobbies" value="music" />
+                                    <label for="music" class="checkBox">Music</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="sport" name="hobbies" value="sport" />
+                                    <label for="sport" class="checkBox">Sport</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="travel" name="hobbies" value="travel" />
+                                    <label for="travel" class="checkBox">Travel</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="movies" name="hobbies" value="movies" />
+                                    <label for="movies" class="checkBox">Movies</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div>
+                    <div class="content-col-1">
+                        <label for="sourceOfIncome">Source of Income</label>
+                        <select id="sourceOfIncome" name="sourceOfIncome">
+                            <option value="business">Business</option>
+                            <option value="employed" selected>Employed</option>
+                            <option value="investmentIncome">Investment Income</option>
+                        </select>
+                    </div>
+                    <div class="content-col-2">
+                        <label class="rangeLabel">Income</label>
+                        <div class="content-col-2-range">
+                            <input type="range" name="income" id="income" min="10" max="100" step="1" value="20" />
+                            <output id="demo" class="demo">20K</output>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="fileUploadLine">
+                    <div class="content-col-1">
+                        <label for="filePicture">Upload Profile Picture</label>
+                        <input name="myFile" type="file">
+                    </div>
+                    <div class="content-col-2">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" value="18" min="12" max="120" />
+                    </div>
+                </div>
+                <label for="bio">Bio</label>
+                <textarea placeholder="Tell about yourself"></textarea>
+            </div>
+            <footer>
+                <input type="submit" value="Create">
+            </footer>
+        </form>
+    </div>
+</body>

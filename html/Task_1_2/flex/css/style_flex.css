@@ -1,0 +1,101 @@
+@media screen and (min-width: 320px) and (max-width:768px) {
+    html, body{
+        height: 100%;
+    }
+    
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+    }
+
+    main {
+        padding: 10px;
+        overflow: scroll;   
+        flex:1;     
+    }
+
+    nav {
+        padding: .7em;
+    }
+
+    aside {
+       
+        padding: .7em;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+    }
+
+
+    .container {
+        display: flex;
+        flex-grow: 1;
+    }
+
+    main {
+        flex: 3;
+        padding: 10px;
+        overflow: auto;
+    }
+
+    nav {
+        flex: 1;
+        padding: 10px;
+    }
+
+    aside {
+        flex: 1;
+        padding: 10px;
+    }
+}
+
+h1 {
+    font-size: 26px;
+}
+
+p {
+    font-size: 18px;
+}
+
+strong {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+strong+p {
+    padding-top: 1em;
+}
+
+header {
+    background-color: cornflowerblue;
+    color: aliceblue;
+    text-align: center;
+    padding: 1.1em;
+}
+
+nav {
+    background-color: orange;
+}
+
+aside {
+    background-color: blueviolet;
+}
+
+footer {
+    background-color: forestgreen;
+    color: aliceblue;
+    text-align: center;
+    padding: 1.1em;
+}
