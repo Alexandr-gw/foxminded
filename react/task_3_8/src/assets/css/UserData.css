@@ -1,0 +1,45 @@
+.contentWrapper {
+    font-size: 22px;
+
+}
+
+li {
+    justify-content: flex-start
+}
+
+/* li input[type="checkbox"] {
+    appearance: none;
+} */
+
+.checkbox {
+    border: 1px solid black;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50px;
+}
+
+li input[type="checkbox"]:checked.checkbox{
+    width: 1.5em;
+    height: 1.5em;
+    background-color: chartreuse;
+}
+
+li input[type="checkbox"]:checked ~ label{
+    color: gainsboro;
+    text-decoration: line-through;
+}
+
+.postElement{
+    display: flex;
+    flex-direction: column;
+}
+
+.textDescription{
+    font-size: 16px;
+    color: gainsboro;
+}
+
+h5{
+    margin-top: 0;
+    margin-bottom: 1em;
+}

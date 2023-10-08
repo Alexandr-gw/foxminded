@@ -1,0 +1,73 @@
+.addToDo {
+    display: flex;
+    flex-direction: row;
+}
+
+.addToDo input {
+    width: 80%;
+}
+
+.addToDo button {
+    border: none;
+    background-color: green;
+    color: #FFF;
+    border-radius: 5px;
+    padding: .5em 1em;
+    cursor: pointer;
+    transition: filter .3s linear;
+}
+
+.addToDo button:hover {
+    filter: opacity(.7)
+}
+
+li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1em 0;
+}
+
+li input[type="checkbox"] {
+    cursor: pointer;
+}
+
+li input[type="text"] {
+    width: 80%;
+    border: none;
+    font-size: 22px;
+}
+
+li input[type="text"]:focus+.saveBtn {
+    display: block;
+}
+
+li .saveBtn {
+    display: none;
+    border: none;
+    background-color: green;
+    color: #FFF;
+    border-radius: 5px;
+    padding: .5em 1em;
+    cursor: pointer;
+    transition: filter .3s linear;
+}
+
+li .saveBtn:hover {
+    filter: opacity(.7)
+}
+
+li button {
+    border: none;
+    background-color: red;
+    color: #FFF;
+    border-radius: 5px;
+    padding: .5em 1em;
+    cursor: pointer;
+    transition: filter .3s linear;
+}
+
+li button:hover {
+    filter: opacity(.7)
+}
