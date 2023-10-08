@@ -1,0 +1,155 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../css/shop1200.css">
+    <link rel="stylesheet" href="../css/shop1025x1199.css">
+    <link rel="stylesheet" href="../css/shop769x1024.css">
+    <link rel="stylesheet" href="../css/shop481x768.css">
+    <link rel="stylesheet" href="../css/shop320x480.css">
+    <title>Shop</title>
+</head>
+
+<body>
+    <input type='checkbox' id='toggle'></input>
+    <aside>
+        <label for='toggle' class="openCloseCartBtn"><img src="../../img/aside-x-btn.svg"></label>
+        <p>box</p>
+        <h2>Your Bag</h2>
+        <div class="cart-list">
+            <!-- DATA FROM JS -->
+        </div>
+        <div class="cart-total">
+            <!-- DATA FROM JS -->
+        </div>
+    </aside>
+    <div class="wrapper">
+        <header>
+            <div class="log-nav-container">
+                <p>foxminded</p>
+                <ul class="nav-bar">
+                    <li><a href="../../index.html">mainpage</a></li>
+                    <li><a href="../../history/html/history.html">our history</a></li>
+                    <li><a href="#">all items</a></li>
+                </ul>
+                <input type="checkbox" id="hamburger-input" class="burger-shower" />
+                <label id="hamburger-menu" for="hamburger-input">
+                    <ul id="sidebar-menu">
+                        <li>foxminded</li>
+                        <li><a href="../../index.html">mainpage</a></li>
+                        <li><a href="../../history/html/history.html">our history</a></li>
+                        <li><a href="#">all items</a></li>
+                        <li><img src="../../img/aside-x-btn.svg" alt="x btn img"></li>
+                    </ul>
+                </label>
+            </div>
+            <div class="nav-bar-img">
+                <label for='toggle' class='openCloseCartBtn'><img src="../../img/shopping-basket.svg" alt="Basket img">
+                    <span class='in-cart-quantity'></span>
+                </label>
+                <a href="#"><img src="../../img/fox-header.svg" alt="Fox img"></a>
+            </div>
+        </header>
+        <main>
+            <div class="main-top-bar">
+                <ul class="breadcrumb-navigation">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li>All Items</li>
+                </ul>
+                <h1>All Items</h1>
+            </div>
+            <div class="main-content">
+                <div class="search-tools">
+                    <form role="search" method="get" class="search-form form" action="" autocomplete="off">
+                        <div>
+                            <input type="search" id="input" class="search-field" placeholder="Search" value=""
+                                id="search">
+                            <button class="search-icon" type="submit"></button>
+                        </div>
+                    </form>
+                    <div class="topics-list">
+                        <p>Topic</p>
+                        <nav>
+                            <ul id="topics">
+                                <li class="buttonActive">
+                                    <button data-topic-type="All">All</button>
+                                </li>
+                                <!-- DATA FROM JS -->
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="price-slider">
+                        <!-- DATA FROM JS -->
+                        <output id="rangeValueOutput">Value: $</output>
+                    </div>
+                </div>
+                <ul class="item-list">
+                    <!-- DATA FROM JS -->
+                </ul>
+            </div>
+            <button id="showAllItems">All foxes</button>
+        </main>
+        <footer>
+            <div class="footer-information">
+                <div class="logo-media">
+                    <p>foxminded</p>
+                    <div class="footer-call-us">
+                        <p>Lorem ipsum dolor sit amet consectetur consectetur</p>
+                        <a href="tel:895632547887">Call us : 8956 3254 7887</a>
+                        <ul class="social_btns">
+                            <li><a href="#"><img src="../../img/inst-img.png" alt="Instagram img"></a></li>
+                            <li><a href="#"><img src="../../img/telegram-img.png" alt="telegram img"></a></li>
+                            <li><a href="#"><img src="../../img/twitter-img.png" alt="Twitter img"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-block">
+                        <h2>Shop</h2>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block">
+                        <h2>Products</h2>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block">
+                        <h2>Collection</h2>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block">
+                        <h2>Weekly updates</h2>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block">
+                        <h2>About us</h2>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p>Storelogo, 2023 All rights reserved</p>
+        </footer>
+    </div>
+</body>
+
+<script src="../js/shop.js"></script>

@@ -1,0 +1,826 @@
+@media screen and (min-width: 320px) and (max-width:480px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 1em 2em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        margin-left: 1em;
+    }
+
+    header>p {
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 1em;
+        align-self: center;
+    }
+
+    .search-field {
+        border: 1px solid #E0E0E0;
+        border-radius: 10px;
+        padding: 5px 1em;
+        margin-left: 1em;
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .search-form>div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #suggestions {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-icon {
+        background-image: url("../img/search.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1em;
+        height: 1em;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        align-self: center;
+        position: relative;
+        margin-left: -1.5em;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .top-bar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .country-card-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .country-box {
+        box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 2;
+        margin: 15px 10px 5px;
+        border-radius: 10px;
+    }
+
+    img {
+        flex: 1;
+        z-index: 2;
+        border-radius: 10px;
+        background-size: cover;
+    }
+
+    .country-information {
+        display: flex;
+        flex-direction: column;
+        padding: .5em 2em;
+        row-gap: 10px;
+    }
+
+    .country-information #countryName {
+        font-weight: bold;
+    }
+
+    .country-information p {
+        text-transform: capitalize;
+    }
+
+    .country-information i {
+        color: #353535;
+    }
+
+    select {
+        margin-top: 10px;
+        border: 1px solid #E0E0E0;
+        border-radius: 10px;
+        padding: 5px 1em;
+        margin-left: 1em;
+        width: 87%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .autocomplete-items {
+        width: 80%;
+        margin-left: 1em;
+        padding: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #d4d4d4;
+    }
+
+    .autocomplete-items div:hover {
+        background-color: #e9e9e9;
+    }
+
+    label {
+        background-color: #242424;
+        border: 1px solid #E0E0E0;
+        border-radius: 15px;
+        width: 4em;
+        height: 2em;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-self: flex-end;
+    }
+
+    .do-day {
+        transform: translateX(25px);
+        transition: .3s;
+        margin-left: 15px;
+        background-image: url("../img/switch-day.png    ");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1em;
+        height: 1em;
+        border: none;
+        align-self: center;
+    }
+
+    .day {
+        background: #F8F8F8;
+        color: #353535;
+        min-height: 100%;
+    }
+
+    .do-night {
+        transform: translateX(0px);
+        opacity: 0;
+        transition: .3s;
+
+        background-image: url("../img/switch-night.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1em;
+        height: 1em;
+        border: none;
+        align-self: center;
+    }
+
+    #switch-btn:checked~label>.do-day {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+
+    #switch-btn:checked~label>.do-night {
+        opacity: 1;
+        transform: translateX(-20px);
+    }
+
+    /* Night theme styling */
+
+    .night {
+        background-color: #242424;
+        color: #fff;
+        min-height: 100%;
+    }
+
+    .wrapper.night .country-box {
+        outline: 1px solid #fff;
+        outline-offset: -1px;
+    }
+
+    .wrapper.night .country-information i {
+        color: #fff;
+    }
+
+    .wrapper.night select {
+        background-color: #242424;
+        color: #fff;
+    }
+
+    .wrapper.night .search-field {
+        background-color: #242424;
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width:768px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 1em 2em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+        margin-left: 1em;
+    }
+
+    header>p {
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 1em;
+        align-self: center;
+    }
+
+    .search-field {
+        border: 1px solid #E0E0E0;
+        border-radius: 10px;
+        padding: 5px 1em;
+        margin-left: 1em;
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .search-form>div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #suggestions {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-icon {
+        background-image: url("../img/search.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1em;
+        height: 1em;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        align-self: center;
+        position: relative;
+        margin-left: -1.5em;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .top-bar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .country-card-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .country-box {
+        box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 2;
+        margin: 15px 10px 5px;
+        border-radius: 10px;
+    }
+
+    img {
+        flex: 1;
+        z-index: 2;
+        border-radius: 10px;
+        background-size: cover;
+    }
+
+    .country-information {
+        display: flex;
+        flex-direction: column;
+        padding: .5em 2em;
+        row-gap: 10px;
+    }
+
+    .country-information #countryName {
+        font-weight: bold;
+    }
+
+    .country-information p {
+        text-transform: capitalize;
+    }
+
+    .country-information i {
+        color: #353535;
+    }
+
+    select {
+        margin-top: 10px;
+        border: 1px solid #E0E0E0;
+        border-radius: 10px;
+        padding: 5px 1em;
+        margin-left: 1em;
+        width: 87%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .autocomplete-items {
+        width: 80%;
+        margin-left: 1em;
+        padding: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #d4d4d4;
+    }
+
+    .autocomplete-items div:hover {
+        background-color: #e9e9e9;
+    }
+
+    label {
+        background-color: #242424;
+        border: 1px solid #E0E0E0;
+        border-radius: 15px;
+        width: 4em;
+        height: 2em;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+        align-self: flex-end;
+    }
+
+    .do-day {
+        transform: translateX(25px);
+        transition: .3s;
+        margin-left: 15px;
+        background-image: url("../img/switch-day.png    ");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1em;
+        height: 1em;
+        border: none;
+        align-self: center;
+    }
+
+    .day {
+        background: #F8F8F8;
+        color: #353535;
+        min-height: 100%;
+    }
+
+    .do-night {
+        transform: translateX(0px);
+        opacity: 0;
+        transition: .3s;
+
+        background-image: url("../img/switch-night.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1em;
+        height: 1em;
+        border: none;
+        align-self: center;
+    }
+
+    #switch-btn:checked~label>.do-day {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+
+    #switch-btn:checked~label>.do-night {
+        opacity: 1;
+        transform: translateX(-20px);
+    }
+
+    /* Night theme styling */
+
+    .night {
+        background-color: #242424;
+        color: #fff;
+        min-height: 100%;
+    }
+
+    .wrapper.night .country-box {
+        outline: 1px solid #fff;
+        outline-offset: -1px;
+    }
+
+    .wrapper.night .country-information i {
+        color: #fff;
+    }
+
+    .wrapper.night select {
+        background-color: #242424;
+        color: #fff;
+    }
+
+    .wrapper.night .search-field {
+        background-color: #242424;
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width:1024px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 1em 2em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 1em;
+    }
+
+    header>p {
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 1em;
+    }
+
+    .search-field {
+        border: 1px solid #E0E0E0;
+        border-radius: 10px;
+        padding: 5px 1em;
+        margin-left: 1em;
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .search-form>div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #suggestions {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-icon {
+        background-image: url("../img/search.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1em;
+        height: 1em;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        align-self: center;
+        position: relative;
+        margin-left: -1.5em;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .top-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .country-card-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .country-box {
+        box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 2;
+        margin: 15px 10px 5px;
+        border-radius: 10px;
+    }
+
+    img {
+        flex: 1;
+        z-index: 2;
+        border-radius: 10px;
+        background-size: cover;
+    }
+
+    .country-information {
+        display: flex;
+        flex-direction: column;
+        padding: .5em 2em;
+        row-gap: 10px;
+    }
+
+    .country-information #countryName {
+        font-weight: bold;
+    }
+
+    .country-information p {
+        text-transform: capitalize;
+    }
+
+    .country-information i {
+        color: #353535;
+    }
+
+    select {
+        border: 1px solid #E0E0E0;
+        border-radius: 10px;
+        padding: 5px 1em;
+        margin-left: 1em;
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .autocomplete-items {
+        width: 80%;
+        margin-left: 1em;
+        padding: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #d4d4d4;
+    }
+
+    .autocomplete-items div:hover {
+        background-color: #e9e9e9;
+    }
+
+    label {
+        background-color: #242424;
+        border: 1px solid #E0E0E0;
+        border-radius: 15px;
+        width: 4em;
+        height: 2em;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .do-day {
+        transform: translateX(25px);
+        transition: .3s;
+        margin-left: 15px;
+        background-image: url("../img/switch-day.png    ");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1em;
+        height: 1em;
+        border: none;
+        align-self: center;
+    }
+
+    .day {
+        background: #F8F8F8;
+        color: #353535;
+        min-height: 100%;
+    }
+
+    .do-night {
+        transform: translateX(0px);
+        opacity: 0;
+        transition: .3s;
+
+        background-image: url("../img/switch-night.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1em;
+        height: 1em;
+        border: none;
+        align-self: center;
+    }
+
+    #switch-btn:checked~label>.do-day {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+
+    #switch-btn:checked~label>.do-night {
+        opacity: 1;
+        transform: translateX(-20px);
+    }
+
+    /* Night theme styling */
+
+    .night {
+        background-color: #242424;
+        color: #fff;
+        min-height: 100%;
+    }
+
+    .wrapper.night .country-box {
+        outline: 1px solid #fff;
+        outline-offset: -1px;
+    }
+
+    .wrapper.night .country-information i {
+        color: #fff;
+    }
+
+    .wrapper.night select {
+        background-color: #242424;
+        color: #fff;
+    }
+
+    .wrapper.night .search-field {
+        background-color: #242424;
+        color: #fff;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 1em 2em;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 1em;
+    }
+
+    header>p {
+        font-weight: bold;
+        font-size: 22px;
+        margin-bottom: 1em;
+    }
+
+    .search-field {
+        border: 1px solid #E0E0E0;
+        border-radius: 10px;
+        padding: 5px 1em;
+        margin-left: 1em;
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .search-form>div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #suggestions {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .search-icon {
+        background-image: url("../img/search.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1em;
+        height: 1em;
+        border: none;
+        background-color: rgba(0, 0, 0, 0);
+        align-self: center;
+        position: relative;
+        margin-left: -1.5em;
+    }
+
+    input[type="checkbox"] {
+        display: none;
+    }
+
+    .top-bar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .country-card-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .country-box {
+        box-shadow: 0px 2px 15px 3px rgba(0, 0, 0, 0.2);
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 2;
+        margin: 15px 10px 5px;
+        border-radius: 10px;
+    }
+
+    img {
+        flex: 1;
+        z-index: 2;
+        border-radius: 10px;
+        background-size: cover;
+    }
+
+    .country-information {
+        display: flex;
+        flex-direction: column;
+        padding: .5em 2em;
+        row-gap: 10px;
+    }
+
+    .country-information #countryName {
+        font-weight: bold;
+    }
+
+    .country-information p {
+        text-transform: capitalize;
+    }
+
+    .country-information i {
+        color: #353535;
+    }
+
+    select {
+        border: 1px solid #E0E0E0;
+        border-radius: 10px;
+        padding: 5px 1em;
+        margin-left: 1em;
+        width: 80%;
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .autocomplete-items {
+        width: 80%;
+        margin-left: 1em;
+        padding: 10px;
+        cursor: pointer;
+        border-bottom: 1px solid #d4d4d4;
+    }
+
+    .autocomplete-items div:hover {
+        background-color: #e9e9e9;
+    }
+
+    label {
+        background-color: #242424;
+        border: 1px solid #E0E0E0;
+        border-radius: 15px;
+        width: 4em;
+        height: 2em;
+        cursor: pointer;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .do-day {
+        transform: translateX(25px);
+        transition: .3s;
+        margin-left: 15px;
+        background-image: url("../img/switch-day.png    ");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1em;
+        height: 1em;
+        border: none;
+        align-self: center;
+    }
+
+    .day {
+        background: #F8F8F8;
+        color: #353535;
+        min-height: 100%;
+    }
+
+    .do-night {
+        transform: translateX(0px);
+        opacity: 0;
+        transition: .3s;
+
+        background-image: url("../img/switch-night.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1em;
+        height: 1em;
+        border: none;
+        align-self: center;
+    }
+
+    #switch-btn:checked~label>.do-day {
+        opacity: 0;
+        transform: translateX(0px);
+    }
+
+    #switch-btn:checked~label>.do-night {
+        opacity: 1;
+        transform: translateX(-20px);
+    }
+
+    /* Night theme styling */
+
+    .night {
+        background-color: #242424;
+        color: #fff;
+        min-height: 100%;
+    }
+
+    .wrapper.night .country-box {
+        outline: 1px solid #fff;
+        outline-offset: -1px;
+    }
+
+    .wrapper.night .country-information i {
+        color: #fff;
+    }
+
+    .wrapper.night select {
+        background-color: #242424;
+        color: #fff;
+    }
+
+    .wrapper.night .search-field {
+        background-color: #242424;
+        color: #fff;
+    }
+}

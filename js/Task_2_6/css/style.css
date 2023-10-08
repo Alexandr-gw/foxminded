@@ -1,0 +1,161 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.toDoList li {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+main {
+    width: 50%;
+    flex: .7;
+}
+
+.inputField {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F0F5F8;
+    border: 1px solid #D2D2D2;
+    border-radius: 50px;
+}
+
+.inputField .input {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    width: 80%;
+    padding: 5px 10px;
+}
+
+.inputField .editSaveBtn {
+    border-radius: 50px;
+    color: #FFF;
+    padding: .5em 4em;
+    text-align: center;
+    font-size: 16px;
+    transition: all .3s;
+}
+
+.edit {
+    outline: 1px solid red;
+    border: none;
+    background-color: red;
+}
+
+.save {
+    outline: 1px solid #00C45A;
+    border: none;
+    background-color: #00C45A;
+}
+
+.toDoList ul {
+    margin-top: 1em;
+}
+
+.toDoList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F0F5F8;
+    border: 1px solid #D2D2D2;
+    border-radius: 50px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+}
+
+.toDoList li>p {
+    padding: 5px 10px;
+}
+
+.toDoList li .btns {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px 10px;
+    width: 7em;
+}
+
+.toDoList li .btns .safeBtn {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #00C45A;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 10px;
+    color: #FFF;
+}
+
+.toDoList li .btns label {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    font-weight: lighter;
+}
+
+.toDoList li .btns label span {
+    margin-top: 3px;
+}
+
+.toDoList li .btns .delBtn {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 10px;
+    color: #949494;
+}
+
+.toDoList li .btns .deleteOne {
+    background-color: #949494;
+    border: none;
+    border-radius: 50px;
+    width: 1rem;
+    height: 1rem;
+    font-size: 7px;
+    color: #FFF;
+}
+
+.toDoList li .btns .deleteOne:hover {
+    background-color: red;
+}
+
+.deleteAll {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 50px;
+    color: #989898;
+    text-transform: uppercase;
+}
+
+.deleteAll:hover {
+    color: red;
+}
+
+.checkbox {
+    align-self: center;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+
+}
+
+.checkbox::before {
+    display: flex;
+    align-self: center;
+    content: "+";
+    font-size: 1em;
+    background-color: #FFF;
+   clip-path: polygon(44% 74%, 90% 10%, 62% 71%, 46% 100%, 31% 80%, 9% 51%);
+}

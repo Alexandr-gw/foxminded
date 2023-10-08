@@ -1,0 +1,559 @@
+    /* FONT IMPORT */
+
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
+    @import url('https://fonts.googleapis.com/css?family=Playfair Display');
+
+    @media screen and (min-width: 1025px) and (max-width:1199px) {
+        .wrapper {
+            min-height: 100vh;
+        }
+
+        /* ASIDE */
+
+        aside {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            z-index: 10;
+            right: -42%;
+            background-color: #fff;
+            position: fixed;
+            width: 40%;
+            height: 100%;
+            transition: right 0.3s ease-in-out;
+        }
+
+        #toggle {
+            display: none;
+        }
+
+        #toggle:checked~aside {
+            right: 0;
+            box-shadow: -10px 0 0 100vw rgba(0, 0, 0, 0.65);
+            height: 100vh;
+            overflow-y: scroll;
+        }
+
+        aside>label {
+            background-color: transparent;
+            border: none;
+            margin: 1em 0;
+            transition: filter .3s linear;
+            cursor: pointer;
+        }
+
+        aside>label:hover {
+            filter: opacity(.5);
+        }
+
+        aside>p {
+            color: #969595;
+            font-family: "Montserrat";
+            font-size: 15px;
+        }
+
+        aside>h2 {
+            margin-top: .1em;
+            font-family: 'Playfair Display';
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        .cart-list {
+            display: flex;
+            flex-direction: column;
+            margin-top: 5em;
+            padding-left: 3em;
+        }
+
+        aside .cart-item {
+            display: flex;
+            flex-direction: row;
+        }
+
+        aside .cart-item .item-info {
+            display: flex;
+            flex-direction: column;
+            flex: 2;
+            margin-top: 5px;
+        }
+
+        aside .cart-item .item-info img {
+            width: 11em;
+            height: 6em;
+        }
+
+        aside .cart-item .item-descriptions {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around
+        }
+
+        aside .cart-item .item-descriptions h5 {
+            font-family: "Montserrat";
+            font-size: 15px;
+            font-weight: bold;
+            margin-top: 5px;
+        }
+
+        aside .cart-item .item-quantity {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin: 1em 0 0 2em;
+        }
+
+        aside .cart-item .item-quantity .quantity-btns {
+            display: flex;
+            flex-direction: row;
+        }
+
+        aside .cart-item .item-quantity .quantity-btns button {
+            background: transparent;
+            border: none;
+            color: #8C8C8C;
+            font-size: 27px;
+        }
+
+        aside .cart-item .item-quantity .input-quantity-field {
+            width: 4em;
+            border: none;
+            background-color: #CC5520;
+            color: #fff;
+            border-radius: 15px;
+            text-align: center;
+            padding: .5em;
+        }
+
+        aside .cart-item .item-quantity .remove-btn {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            color: #8C8C8C;
+            font-family: 'Roboto';
+            font-size: 12px;
+            padding-top: 1em;
+            transition: color .3s linear;
+            cursor: pointer;
+        }
+
+        aside .cart-item .item-quantity .remove-btn:hover {
+            color: red;
+        }
+
+        aside .cart-item .item-quantity .remove-btn span {
+            background-color: #8C8C8C;
+            color: #fff;
+            width: 10px;
+            height: 10px;
+            border-radius: 30px;
+            box-shadow: 0 0 0 7px #8C8C8C;
+            transition: all .3s linear;
+        }
+
+        aside .cart-item .item-quantity .remove-btn:hover span {
+            background-color: red;
+            box-shadow: 0 0 0 7px red;
+        }
+
+        aside .cart-item .item-quantity .remove-btn span img {
+            filter: brightness(1.75);
+            width: 10px;
+            height: 10px;
+        }
+
+        .cart-total {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .cart-total h2 {
+            margin-top: .3em;
+            font-family: 'Playfair Display';
+            font-size: 37px;
+            font-weight: bold;
+        }
+
+        .cart-total h2 i {
+            font-style: italic;
+        }
+
+        .cart-total button {
+            background-color: #CC5520;
+            color: #fff;
+            border: none;
+            width: 100%;
+            padding: 1em 7em;
+            margin-top: 2em;
+            transition: filter .3s linear;
+        }
+
+        .cart-total button:hover {
+            filter: opacity(.75)
+        }
+
+        /* HEADER */
+
+        #sidebar-menu,
+        .burger-shower,
+        hamburger-menu {
+            display: none;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding: 1em 0;
+            background-color: rgba(0, 0, 0, 0.45);
+            position: absolute;
+            width: 100%;
+            color: #fff;
+            text-transform: uppercase;
+            align-content: center;
+            flex-wrap: wrap;
+        }
+
+        .log-nav-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            width: 90%;
+        }
+
+        .nav-bar {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            width: 50%;
+            font-family: "Montserrat";
+        }
+
+        .nav-bar a {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .nav-bar-img {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .nav-bar-img a,
+        .nav-bar-img label {
+            margin-right: 1em;
+            transition: opacity .3s linear;
+            cursor: pointer;
+        }
+
+        .nav-bar-img a:hover,
+        .nav-bar-img label:hover {
+            opacity: .5;
+        }
+
+        .in-cart-quantity{
+            color:#fff;
+        }
+
+        .nav-bar li a:link,
+        .nav-bar li a:visited {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .nav-bar li a {
+            transition: color .3s linear;
+        }
+
+        .nav-bar li a:hover {
+            color: #CC5520;
+        }
+
+        /* MAIN */
+
+        main {
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+        }
+
+        /* --- */
+
+        .intro {
+            background-image: url("../../img/bckgrnd-fox.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position-x: 50%;
+            height: 100vh;
+        }
+
+        .categories {
+            flex: 1;
+        }
+
+        .intro-text {
+            display: inline-block;
+            width: 35%;
+            padding: 10em 8em;
+        }
+
+        .intro-text>h2 {
+            font-family: 'Playfair Display';
+            font-size: 72px;
+        }
+
+        .intro-text>p {
+            margin-top: 15px;
+            font-size: 20px;
+            letter-spacing: 1px;
+        }
+
+        /* --- */
+        .category-container {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 3em 7em;
+        }
+
+        .categories {
+            color: black;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            gap: 1em 1em;
+            grid-template-areas:
+                "food food house house"
+                "food food house house"
+                "office office house house"
+                "office office house house";
+        }
+
+        .food {
+            grid-area: food;
+            background-color: #F4F4F4;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 2em;
+        }
+
+        .office {
+            grid-area: office;
+            background-color: #F4F4F4;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 2em;
+        }
+
+        .house {
+            grid-area: house;
+            background-color: #F4F4F4;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 2em;
+            background-image: url('../../img/fox.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position-x: right;
+        }
+
+        .food>img, .office>img {
+            object-fit: contain;
+        }
+
+        .category-text {
+            padding-top: 2em;
+            width: 40%;
+        }
+
+        .category-text>p {
+            font-family: "Montserrat";
+            font-size: 18px;
+            color: #969595;
+            font-weight: bold;
+        }
+
+        .category-text>h5 {
+            margin: .5em 0;
+            font-size: 24px;
+            font-family: 'Playfair Display';
+            font-weight: bold;
+            line-height: 34px;
+        }
+
+        .category-container>button {
+            align-self: center;
+            margin-top: 3em;
+            width: 40%;
+            padding: 1em;
+            color: #fff;
+            background-color: #CC5520;
+            border: none;
+            transition: filter .3s linear;
+        }
+
+        .category-container>button:hover {
+            filter: opacity(.75);
+        }
+
+        .category-container button a:link,
+        .category-container button a:visited {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        /* --- */
+
+        .news-subscribe {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-items: center;
+            font-family: "Montserrat";
+            background-color: #EFEFEF;
+            text-align: center;
+            padding: 3em;
+        }
+
+        .news-subscribe>h2 {
+            color: #201616;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .news-subscribe>p {
+            color: black;
+            width: 50%;
+            margin: 1em 0;
+            font-size: 16px;
+        }
+
+        .email-subscription {
+            display: flex;
+            flex-direction: row;
+            width: 40%;
+        }
+
+        input[type="email"] {
+            padding: 1em;
+            width: 100%;
+            background-color: #EFEFEF;
+            border: 1px solid #9A9494;
+            border-right: none;
+        }
+
+        .email-subscription>button {
+            color: #fff;
+            background-color: black;
+            padding: .5em 3em;
+            border: none;
+            transition: filter .3s linear;
+        }
+
+        .email-subscription>button:hover {
+            filter: opacity(.5);
+        }
+
+        /* FOOTER */
+
+        footer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #191919;
+            padding: 3em 7em;
+            color: #fff;
+        }
+
+        footer>p {
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .footer-information {
+            display: flex;
+            flex-direction: row;
+            width: 90%;
+            margin-bottom: 2em;
+        }
+
+        .logo-media {
+            width: 15em;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-call-us>p {
+            padding-top: 1em;
+        }
+
+        /* 
+    .footer-call-us>a{
+        padding-top: 1em;
+        color: #fff;
+    } */
+
+        .footer-call-us>a:link,
+        .footer-call-us>a:visited {
+            padding-top: 1em;
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        .social_btns {
+            display: flex;
+            flex-direction: row;
+            padding-top: 1em;
+        }
+
+        .social_btns li {
+            margin-right: 1em;
+        }
+
+        .social_btns li a {
+            transition: opacity .3s linear;
+        }
+
+        .social_btns li a:hover {
+            opacity: .5;
+        }
+
+        .footer-nav{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+         }
+
+        .footer-nav-block>h2 {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        .footer-nav-block li {
+            margin-top: .5em;
+        }
+
+        .footer-nav-block ul li a {
+            transition: color .3s linear;
+        }
+
+        .footer-nav-block ul li a:hover {
+            color: #CC5520;
+        }
+
+        .footer-nav-block li a:link,
+        .footer-nav-block li a:visited {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+    }

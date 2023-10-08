@@ -1,0 +1,161 @@
+<!doctype html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./home/css/home1200.css">
+    <link rel="stylesheet" href="./home/css/home1025x1199.css">
+    <link rel="stylesheet" href="./home/css/home769x1024.css">
+    <link rel="stylesheet" href="./home/css/home481x768.css">
+    <link rel="stylesheet" href="./home/css/home320x480.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <input type='checkbox' id='toggle'></input>
+    <aside>
+        <label for='toggle' class="openCloseCartBtn"><img src="./img/aside-x-btn.svg"></label>
+        <p>box</p>
+        <h2>Your Bag</h2>
+        <div class="cart-list">
+            <!-- DATA FROM JS -->
+        </div>
+        <div class="cart-total">
+            <!-- DATA FROM JS -->
+        </div>
+    </aside>
+    <div class="wrapper">
+        <header>
+            <div class="log-nav-container">
+                <p>foxminded</p>
+                <ul class="nav-bar">
+                    <li><a href="#">mainpage</a></li>
+                    <li><a href="./history/html/history.html">our history</a></li>
+                    <li><a href="./shop/html/shop.html">all items</a></li>
+                </ul>
+                <input type="checkbox" id="hamburger-input" class="burger-shower" />
+                <label id="hamburger-menu" for="hamburger-input">
+                    <ul id="sidebar-menu">
+                        <li>foxminded</li>
+                        <li><a href="#">mainpage</a></li>
+                        <li><a href="./history/html/history.html">our history</a></li>
+                        <li><a href="./shop/html/shop.html">all items</a></li>
+                        <li><img src="./img/aside-x-btn.svg" alt="x btn img"></li>
+                    </ul>
+                </label>
+            </div>
+            <div class="nav-bar-img">
+                <label for='toggle' class='openCloseCartBtn'><img src="./img/shopping-basket.svg" alt="Basket img">
+                    <span class='in-cart-quantity'></span></label>
+                <a href="#"><img src="./img/fox-header.svg" alt="Fox img"></a>
+            </div>
+        </header>
+        <main>
+            <section class="intro">
+                <div class="intro-text">
+                    <h2>Discover foxlife</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur. Phar eget turpis sem ultricies dolor sit amet
+                        consectetur.</p>
+                </div>
+            </section>
+            <div class="category-container">
+                <div class="categories">
+                    <div class="food">
+                        <div class="category-text">
+                            <p>#Food</p>
+                            <h5>Lorem ipsum dolor sit amet ipsum</h5>
+                        </div>
+                        <img src="./img/chicken.png">
+                    </div>
+                    <div class="office">
+                        <img src="./img/cock.png">
+                        <div class="category-text">
+                            <p>#Office</p>
+                            <h5>Lorem ipsum dolor sit amet ipsum</h5>
+                        </div>
+                    </div>
+                    <div class="house">
+                        <div class="category-text">
+                            <p>#House</p>
+                            <h5>Lorem ipsum dolor sit amet ipsum</h5>
+                        </div>
+                        <!-- <img src="./img/fox.png"> -->
+                    </div>
+                </div>
+                <button><a href="./shop/html/shop.html">All foxes</a></button>
+            </div>
+            <div class="news-subscribe">
+                <h2>Join our newsletter</h2>
+                <p>Lorem ipsum dolor sit amet consectetur. Molestie turpis quis turpis fermentum egestas bibendum.Lorem
+                    ipsum dolor sit amet consectetur. </p>
+                <form class="email-subscription" autocomplete="off">
+                    <input type="email" id="email" class="email-field" placeholder="Enter email">
+                    <button class="subscribe-btn" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-information">
+                <div class="logo-media">
+                    <p>foxminded</p>
+                    <div class="footer-call-us">
+                        <p>Lorem ipsum dolor sit amet consectetur consectetur</p>
+                        <a href="tel:895632547887">Call us : 8956 3254 7887</a>
+                        <ul class="social_btns">
+                            <li><a href="#"><img src="./img/inst-img.png" alt="Instagram img"></a></li>
+                            <li><a href="#"><img src="./img/telegram-img.png" alt="telegram img"></a></li>
+                            <li><a href="#"><img src="./img/twitter-img.png" alt="Twitter img"></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-nav">
+                    <div class="footer-nav-block">
+                        <h2>Shop</h2>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block">
+                        <h2>Products</h2>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block">
+                        <h2>Collection</h2>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block">
+                        <h2>Weekly updates</h2>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-nav-block">
+                        <h2>About us</h2>
+                        <ul>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                            <li><a href="#">Lorem ipsum</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <p>Storelogo, 2023 All rights reserved</p>
+        </footer>
+    </div>
+</body>
+
+<script src="./home/js/home.js"></script>

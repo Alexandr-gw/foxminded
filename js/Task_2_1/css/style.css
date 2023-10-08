@@ -1,0 +1,51 @@
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: azure;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    letter-spacing: 2px;
+  }
+
+  .container p{
+    color: white;
+    background-color:midnightblue;
+    border-radius: 5px;
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  .container span{
+    text-transform: capitalize;
+    color: cornflowerblue;
+  }
+
+  .container button{
+    border: 2px solid midnightblue;
+    border-radius: 5px;
+    color: midnightblue;
+    background: none;
+    align-self: center;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    transition: all linear .3s;
+  }
+
+
+  .container button:hover{
+    border-radius: 5px;
+    color: white;
+    background-color:midnightblue;
+  }

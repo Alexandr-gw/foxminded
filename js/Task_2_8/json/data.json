@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "img": "../../img/fox-cart-img1.png",
+        "name": "cutie cute",
+        "price": "120",
+        "stars": 4.5,
+        "type": "Forest"
+    },
+    {
+        "id": 2,
+        "img": "../../img/fox-cart-img1.png",
+        "name": "foxie fox",
+        "price": "121",
+        "stars": 4.2,
+        "type": "Foxs kids"
+    },
+    {
+        "id": 3,
+        "img": "../../img/fox-cart-img1.png",
+        "name": "red fox",
+        "price": "119",
+        "stars": 4.7,
+        "type": "Other"
+    },
+    {
+        "id": 4,
+        "img": "../../img/fox-cart-img1.png",
+        "name": "small fox",
+        "price": "135",
+        "stars": 4.1,
+        "type": "Foxs kids"
+    },
+    {
+        "id": 5,
+        "img": "../../img/fox-cart-img1.png",
+        "name": "cute little",
+        "price": "119",
+        "stars": 4.8,
+        "type": "Forest"
+    },
+    {
+        "id": 6,
+        "img": "../../img/fox-cart-img1.png",
+        "name": "white fox",
+        "price": "93",
+        "stars": 4.3,
+        "type": "Forest"
+    },
+    {
+        "id": 7,
+        "img": "../../img/fox-cart-img1.png",
+        "name": "cute fox",
+        "price": "199",
+        "stars": 4.0,
+        "type": "Other"
+    }
+    
+]

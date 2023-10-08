@@ -1,0 +1,39 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/index.js"></script>
+    <title>Countries of the world</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <p>Where in the world?</p>
+            <input type="checkbox" id="switch-btn">
+            <label for="switch-btn">
+                <span class="do-day"></span>
+                <span class="do-night"></span>
+            </label>
+        </header>
+        <main>
+            <div class="top-bar">
+                <form role="search" method="get" class="search-form form" action="" autocomplete="off">
+                    <div>
+                        <input type="search" id="input" class="search-field" placeholder="Search for a country..."
+                            value="" id="search">
+                        <button class="search-icon" type="submit"></button> 
+                    </div>
+                </form>
+                <div class="select-menu">
+                    <select id="regionsList" class="">
+                        <option value="0">Region</option>
+                    </select>
+                </div>
+            </div>
+            <div class="country-card-list"></div>
+        </main>
+    </div>
+</body>
